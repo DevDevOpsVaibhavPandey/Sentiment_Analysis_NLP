@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <form action="/predict" method="POST">
+            <label for="comment">Enter your comment:</label>
+            <textarea id="comment" name="text" rows="5" placeholder="Type your comment here..." required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+    </div>
+</body>
+</html>
